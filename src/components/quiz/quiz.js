@@ -57,10 +57,6 @@ function Quiz(props) {
     })
 
     function checkAnswer() {
-        console.log(`Selected: ${selectedAnswer}`)
-        console.log(`Correct: ${correctAnswers}`)
-
-        //possible-breakpoint
         for (let i = 0; i < props.questions.length; i++) {
             const a = document.getElementsByClassName(`que${i} selected`)
             const b = document.getElementsByClassName(`que${i}`)
@@ -100,7 +96,6 @@ function Quiz(props) {
         setSelectedAnswer(prevAnswer => {
             const ayooo = prevAnswer;
             ayooo[index] = answer;
-            console.log(`reee ${ayooo}`)
             return ayooo;
         });
     }
