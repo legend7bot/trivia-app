@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+//https://coolors.co/palette/ffadad-ffd6a5-fdffb6-caffbf-9bf6ff-a0c4ff-bdb2ff-ffc6ff-fffffc
+
+body {
+  background-color: #FFFFFC;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+//for background
+main {
+  $polysize: 40vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .bgpoly {
+    position: fixed;
+    z-index: -100;
+  }
+
+  .poly-1 {
+    left: -3vw;
+    background-color: #FDFFB6;
+    width: $polysize;
+    height: $polysize;
+    border-radius: 60% 40% 36% 64% / 50% 19% 81% 50%;
+  }
+
+  .poly-2 {
+    right: 25vw;
+    top: -15vh;
+    background-color: #FFADAD;
+    height: $polysize;
+    width: $polysize;
+    border-radius: 27% 73% 33% 67% / 62% 64% 36% 38%;
+  }
+
+  .poly-3 {
+    bottom: -15vh;
+    left: -3vw;
+    background-color: #CAFFBF;
+    height: $polysize;
+    width: $polysize;
+    border-radius: 46% 54% 62% 38% / 42% 32% 68% 58%;
+  }
+
+  .poly-4 {
+    right: -6vw;
+    bottom: 17vh;
+    background-color: #FFC6FF;
+    height: $polysize;
+    width: $polysize;
+    border-radius: 53% 47% 27% 73% / 53% 55% 45% 47%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 80vw;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
 }
