@@ -1,0 +1,65 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who wrote and directed the animated movie &quot;Spirited Away&quot; (2001)?",
+            "correct_answer": "Hayao Miyazaki",
+            "incorrect_answers": [
+                "Isao Takahata",
+                "Mamoru Hosoda",
+                "Hidetaka Miyazaki"
+            ]
+        },
+        {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "In the anime Black Butler, who is betrothed to be married to Ciel Phantomhive?",
+            "correct_answer": "Elizabeth Midford",
+            "incorrect_answers": [
+                "Rachel Phantomhive",
+                "Alexis Leon Midford",
+                "Angelina Dalles"
+            ]
+        },
+        {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In Pok&eacute;mon Chronicles, why was Misty afraid of Gyarados?",
+            "correct_answer": "She crawled into it&#039;s mouth as a baby.",
+            "incorrect_answers": [
+                "She found it scary.",
+                "She was badly injured from it.",
+                "It is part Bug."
+            ]
+        },
+        {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which of these is not a world in the anime &quot;Buddyfight&quot;?",
+            "correct_answer": "Ancient Dragon World",
+            "incorrect_answers": [
+                "Dragon World",
+                "Star Dragon World",
+                "Darkness Dragon World"
+            ]
+        },
+        {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What colour hair does the main character of the Yu-Gi-Oh! original anime series have?",
+            "correct_answer": "Red, black and yellow",
+            "incorrect_answers": [
+                "Red, yellow and green",
+                "Red, black and green",
+                "Red, purple and blue"
+            ]
+        }
+    ]
+}

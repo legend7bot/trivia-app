@@ -7,6 +7,7 @@ function Quiz(props) {
     const [selectedAnswer, setSelectedAnswer] = useState(['', '', '', '', '']);
     const [correctAnswers, setCorrectAnswers] = useState(['', '', '', '', '']);
     const [readyForNew, setReadyForNew] = useState(false);
+    const [quizError, setQuizError] = useState();
 
 
     function shuffleArray(array) {
@@ -36,9 +37,8 @@ function Quiz(props) {
 
     const quizQuestions = props.questions.map((question, index) => {
 
-        const answerArray = question.incorrect_answers.concat(question.correct_answer);
-        const shuffledAnswers = shuffleArray(answerArray);
-        const options = shuffledAnswers.map((answer) => {
+        const answerArray = question.possible_answers;
+        const options = answerArray.map((answer) => {
             return (
                 <div ansvalue={answer} onClick={(event) => selectAnswer(event, index, answer)} className={`quiz-option que${index}`}>
                     <span>{answer}</span>
@@ -57,6 +57,11 @@ function Quiz(props) {
     })
 
     function checkAnswer() {
+        if (selectedAnswer.includes('')) {
+            setQuizError('Please answer all the questions!!!');
+            console.log("Please Answer All Questions");
+            return;
+        }
         for (let i = 0; i < props.questions.length; i++) {
             const a = document.getElementsByClassName(`que${i} selected`)
             const b = document.getElementsByClassName(`que${i}`)
@@ -108,6 +113,7 @@ function Quiz(props) {
         <div className='quiz-container'>
             <h1>Quizzie</h1>
             {quizQuestions}
+            {quizError && <p className='quiz-error'>{quizError}</p>}
             {readyForNew ?
                 <button className='ansChecker' onClick={newQuiz}>New Quiz</button> :
                 <button className='ansChecker' onClick={checkAnswer}>Check Answer</button>
